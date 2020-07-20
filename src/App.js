@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import Header from "./Header";
 const App = () => {
   const { t, i18n } = useTranslation();
 
@@ -18,6 +19,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="user">
+        <Header padding={"40px"} />
         <div>
           <p>Storage value is {JSON.stringify(value)} </p>
         </div>

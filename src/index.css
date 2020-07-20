@@ -1,6 +1,9 @@
 .App {
   border: 2px solid green;
 }
+header {
+  border: 3px solid orangered;
+}
 .user {
   flex-direction: column;
   align-items: center;
